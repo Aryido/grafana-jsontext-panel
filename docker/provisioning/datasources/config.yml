@@ -1,0 +1,19 @@
+apiVersion: 1
+datasources:
+  - name: fewstaiwan-dataflow-dataset-service
+    type: marcusolsson-json-datasource
+    url: https://gateway.fondus.com.tw/fewstaiwan-dataflow-dataset-service
+    editable: true
+    jsonData:
+      oauthPassThru: true
+
+  - name: static-dataSource
+    type: marcusolsson-static-datasource
+    editable: true
+
+  - name: basic-map-feature-service
+    type: marcusolsson-json-datasource
+    url: https://gateway.fondus.com.tw/map-feature-service
+    editable: true
+    jsonData:
+      oauthPassThru: true

@@ -45,7 +45,7 @@ For more information about panels, refer to the documentation on [Panels](https:
 
 # grafana-jsontext-panel
 
-## 上傳自製panel-plugin步驟
+## 上傳自製panel-plugin步驟(用在私人專案暫時的方法)
 
 ### step1. 
 執行
@@ -62,6 +62,17 @@ For more information about panels, refer to the documentation on [Panels](https:
 在docker-compose加上github release路徑
 例如 https://github.com/Aryido/grafana-jsontext-panel/releases/download/v0.0.1-beta/jsontext.zip;jsontext 
 ```
+
 GF_INSTALL_PLUGINS:"https://github.com/Aryido/grafana-jsontext-panel/releases/download/v0.0.1-beta/jsontext.zip;jsontext" 
+
 ```
+
+### step4.
+因為plugin還沒簽章，故在docker-compose加上認證未簽章認證，使得grafana server可以讀取該plugin
+```
+
+GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsontext-panel
+
+```
+
 

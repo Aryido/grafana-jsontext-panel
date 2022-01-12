@@ -74,5 +74,7 @@ GF_INSTALL_PLUGINS:"https://github.com/Aryido/grafana-jsontext-panel/releases/do
 GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsontext-panel
 
 ```
+### step5.
+檢查grafana server啟動訊息
 
 

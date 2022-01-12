@@ -42,5 +42,26 @@ For more information about panels, refer to the documentation on [Panels](https:
 - [Grafana documentation](https://grafana.com/docs/)
 - [Grafana Tutorials](https://grafana.com/tutorials/) - Grafana Tutorials are step-by-step guides that help you make the most of Grafana
 - [Grafana UI Library](https://developers.grafana.com/ui) - UI components to help you build interfaces using Grafana Design System
+
 # grafana-jsontext-panel
-# grafana-jsontext-panel
+
+## 上傳自製panel-plugin步驟
+
+### step1. 
+執行
+```bash
+   yarn build
+```
+當前專案目錄會產生一個dist目錄，內部都是編譯好的檔案，然後把這些檔案打包成zip
+(注意! 不要多一層目錄)
+
+### step2.
+把zip上傳到github release 提供下載
+
+### step3. 
+在docker-compose加上github release路徑
+例如 https://github.com/Aryido/grafana-jsontext-panel/releases/download/v0.0.1-beta/jsontext.zip;jsontext 
+```
+GF_INSTALL_PLUGINS:"https://github.com/Aryido/grafana-jsontext-panel/releases/download/v0.0.1-beta/jsontext.zip;jsontext" 
+```
+

@@ -76,11 +76,15 @@ GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsontext-panel
 ```
 ### step5.
 檢查grafana server啟動訊息
-
-
-
+![image](https://github.com/Aryido/grafana-jsontext-panel/blob/main/document/message.PNG)
 
 ### step6.
 至grafana網頁內看plugin 
+![image](https://github.com/Aryido/grafana-jsontext-panel/blob/main/document/plugin.PNG)
+
+
+### step7.
+成果
+![image](https://github.com/Aryido/grafana-jsontext-panel/blob/main/document/finish.PNG)
 
 

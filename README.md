@@ -78,3 +78,9 @@ GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsontext-panel
 檢查grafana server啟動訊息
 
 
+
+
+### step6.
+至grafana網頁內看plugin 
+
+

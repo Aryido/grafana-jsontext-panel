@@ -1,13 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
-  "name": "jsonText",
-  "id": "fondus-jsontext-panel",
+  "name": "Json Pretty Formatter",
+  "id": "fondus-jsonpretty-panel",
   "info": {
     "description": "the tool is a panel plugin which can show pretty json",
     "author": {
-      "name": "Aryido",
-      "url": ""
+      "name": "YunYangLee",
+      "url": "https://github.com/Aryido/grafana-jsontext-panel"
     },
     "keywords": [
       "pretty json"

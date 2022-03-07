@@ -86,5 +86,6 @@ GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsontext-panel
 ### step7.
 成果
 ![image](https://github.com/Aryido/grafana-jsontext-panel/blob/main/document/finish.PNG)
+![image](https://user-images.githubusercontent.com/60870275/156395436-1fd26c0d-7223-4e93-9433-f7f2e25e4563.png)
 
 

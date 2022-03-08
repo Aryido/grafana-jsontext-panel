@@ -39,7 +39,8 @@ GF_INSTALL_PLUGINS:"https://github.com/Aryido/grafana-jsontext-panel/releases/do
 ```
 
 ## Unsigned plugin is not showing in GUI 
-
+Grafana required all plugins to be signed, but fondus-jsonpretty-panel have not signed yet. 
+So, we need to add the following Grafana environment into your docker-compose to allow unsigned plugin.
 ```
 
 GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsonpretty-panel

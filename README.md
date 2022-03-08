@@ -1,14 +1,6 @@
-# Grafana Panel Plugin Template
+# Grafana-jsonPretty-Panel
 
-[![Build](https://github.com/grafana/grafana-starter-panel/workflows/CI/badge.svg)](https://github.com/grafana/grafana-starter-panel/actions?query=workflow%3A%22CI%22)
-
-This template is a starting point for building Grafana Panel Plugins in Grafana 7.0+
-
-## What is Grafana Panel Plugin?
-
-Panels are the building blocks of Grafana. They allow you to visualize data in different ways. While Grafana has several types of panels already built-in, you can also build your own panel, to add support for other visualizations.
-
-For more information about panels, refer to the documentation on [Panels](https://grafana.com/docs/grafana/latest/features/panels/panels/)
+This panel is a Grafana Panel Plugin for making pretty-json in Grafana 7.0+
 
 ## Getting started
 
@@ -36,56 +28,34 @@ For more information about panels, refer to the documentation on [Panels](https:
    yarn build
    ```
 
-## Learn more
+# FAQ
+
+## How to download this plugin by docker-compose? 
+
+```
+
+GF_INSTALL_PLUGINS:"https://github.com/Aryido/grafana-jsontext-panel/releases/download/v1.2.2-beta/fondus-jsonpretty-panel.zip; fondus-jsonpretty-panel"" 
+
+```
+
+## Unsigned plugin is not showing in GUI 
+
+```
+
+GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsonpretty-panel
+
+```
+
+
+#Result
+
+
+
+# Learn more
 
 - [Build a panel plugin tutorial](https://grafana.com/tutorials/build-a-panel-plugin)
 - [Grafana documentation](https://grafana.com/docs/)
 - [Grafana Tutorials](https://grafana.com/tutorials/) - Grafana Tutorials are step-by-step guides that help you make the most of Grafana
 - [Grafana UI Library](https://developers.grafana.com/ui) - UI components to help you build interfaces using Grafana Design System
-
-# grafana-jsontext-panel
-
-## 上傳自製panel-plugin步驟(用在私人專案暫時的方法)
-
-### step1. 
-執行
-```bash
-   yarn build
-```
-當前專案目錄會產生一個dist目錄，內部都是編譯好的檔案，然後把這些檔案打包成zip
-(注意! 不要多一層目錄)
-
-### step2.
-把zip上傳到github release 提供下載
-
-### step3. 
-在docker-compose加上github release路徑
-例如 https://github.com/Aryido/grafana-jsontext-panel/releases/download/v0.0.1-beta/jsontext.zip;jsontext 
-```
-
-GF_INSTALL_PLUGINS:"https://github.com/Aryido/grafana-jsontext-panel/releases/download/v0.0.1-beta/jsontext.zip;jsontext" 
-
-```
-
-### step4.
-因為plugin還沒簽章，故在docker-compose加上認證未簽章認證，使得grafana server可以讀取該plugin
-```
-
-GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsontext-panel
-
-```
-### step5.
-檢查grafana server啟動訊息
-![image](https://github.com/Aryido/grafana-jsontext-panel/blob/main/document/message.PNG)
-
-### step6.
-至grafana網頁內看plugin 
-![image](https://github.com/Aryido/grafana-jsontext-panel/blob/main/document/plugin.PNG)
-
-
-### step7.
-成果
-![image](https://github.com/Aryido/grafana-jsontext-panel/blob/main/document/finish.PNG)
-![image](https://user-images.githubusercontent.com/60870275/156395436-1fd26c0d-7223-4e93-9433-f7f2e25e4563.png)
 
 

@@ -46,7 +46,8 @@ So, we need to add the following Grafana environment into your docker-compose to
 GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: fondus-jsonpretty-panel
 
 ```
-
+then
+![image](https://user-images.githubusercontent.com/60870275/157214124-63ad2204-c2e6-424d-ba9c-9fd99e4d8de9.png)
 
 #Result
 
